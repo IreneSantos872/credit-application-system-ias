@@ -1,5 +1,4 @@
-# credit-application-system-ias
-API REST SPRING BOOT e Kotlin 
+# API REST SPRING BOOT e Kotlin
 
 API para Sistema de Avaliação de Créditos para uma empresa de emprestimo, com analise de solicitação de crédito.
 
