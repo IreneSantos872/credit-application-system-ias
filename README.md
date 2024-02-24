@@ -4,31 +4,37 @@ API para Sistema de Avaliação de Créditos para uma empresa de emprestimo, com
 
 Com as seguintes funcionalidades:
 
-Cliente (Customer):
-Cadastrar:
+## Cliente (Customer):
+### Cadastrar:
 Request: firstName, lastName, cpf, income, email, password, zipCode e street
 Response: String
-Editar cadastro:
+
+### Editar cadastro:
 Request: id, firstName, lastName, income, zipCode, street
 Response: firstName, lastName, income, cpf, email, income, zipCode, street
-Visualizar perfil:
+
+### Visualizar perfil:
 Request: id
 Response: firstName, lastName, income, cpf, email, income, zipCode, street
-Deletar cadastro:
+
+### Deletar cadastro:
 Request: id
 Response: sem retorno
-Solicitação de Empréstimo (Credit):
-Cadastrar:
+
+
+## Solicitação de Empréstimo (Credit):
+
+### Cadastrar:
 Request: creditValue, dayFirstOfInstallment, numberOfInstallments e customerId
 Response: String
-Listar todas as solicitações de emprestimo de um cliente:
+
+### Listar todas as solicitações de emprestimo de um cliente:
 Request: customerId
 Response: creditCode, creditValue, numberOfInstallment
-Visualizar um emprestimo:
+
+### Visualizar um emprestimo:
 Request: customerId e creditCode
 Response: creditCode, creditValue, numberOfInstallment, status, emailCustomer e incomeCustomer
-API para Sistema de Avaliação de Créditos
-Diagrama UML Simplificado de uma API para Sistema de Avaliação de Crédito
 
 Esse projeto foi criado com finalidade de desenvolver e aprender as funcionalidades do kotlin e spring boot.
 
