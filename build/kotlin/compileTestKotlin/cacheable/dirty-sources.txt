@@ -1,0 +1,4 @@
+C:\Users\Irene\Documents\irene curso\Projeto_kOTLIN\credit-application-system-ias\src\test\kotlin\me\dio\credit\application\system\service\CreditServiceTest.kt
+C:\Users\Irene\Documents\irene curso\Projeto_kOTLIN\credit-application-system-ias\src\test\kotlin\me\dio\credit\application\system\service\CustomerServiceTest.kt
+C:\Users\Irene\Documents\irene curso\Projeto_kOTLIN\credit-application-system-ias\src\test\kotlin\me\dio\credit\application\system\repository\CreditRepositoryTest.kt
+C:\Users\Irene\Documents\irene curso\Projeto_kOTLIN\credit-application-system-ias\src\test\kotlin\me\dio\credit\application\system\CreditApplicationSystemApplicationTests.kt

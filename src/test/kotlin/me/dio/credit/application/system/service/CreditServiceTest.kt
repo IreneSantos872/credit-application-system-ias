@@ -80,7 +80,7 @@ class CreditServiceTest {
     val customerId: Long = 1L
     val expectedCredits: List<Credit> = listOf(buildCredit(), buildCredit(), buildCredit())
 
-    every { creditRepository.findAllByCustomerId(customerId) } returns expectedCredits
+    every { creditRepository.findAllByCustomer(customerId) } returns expectedCredits
     //when
     val actual: List<Credit> = creditService.findAllByCustomer(customerId)
     //then
@@ -88,7 +88,7 @@ class CreditServiceTest {
     Assertions.assertThat(actual).isNotEmpty
     Assertions.assertThat(actual).isSameAs(expectedCredits)
 
-    verify(exactly = 1) { creditRepository.findAllByCustomerId(customerId) }
+    verify(exactly = 1) { creditRepository.findAllByCustomer(customerId) }
   }
 
   @Test
