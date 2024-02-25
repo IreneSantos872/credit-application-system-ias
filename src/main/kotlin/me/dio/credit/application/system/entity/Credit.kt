@@ -7,7 +7,7 @@ import java.time.LocalDate
 import java.util.UUID
 
 @Entity
-@Table(name = "Credito")
+//@Table(name = "Credito")
 data class Credit (
   @Column(nullable = false, unique = true) var creditCode: UUID = UUID.randomUUID(),
   @Column(nullable = false) val creditValue: BigDecimal = BigDecimal.ZERO,
@@ -16,5 +16,8 @@ data class Credit (
   @Enumerated val status: Status = Status.IN_PROGRESS,
   @ManyToOne var customer: Customer? = null,
   @Id @GeneratedValue(strategy = GenerationType.IDENTITY) val id: Long? = null) {
+  fun apply(function: () -> Unit) {
+
+  }
 
 }
